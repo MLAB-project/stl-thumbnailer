@@ -1,7 +1,7 @@
 # stl-thumbnailer
 Shows thumbnails of STL files in Nautilus file browser. The sources are based on [linux nautilus stl thumbnailer :)](http://www.thingiverse.com/thing:258653)
 
-
+![STL preview of folder](STL-thumbnailer_screenshot.png)
 
 ### Install 
 

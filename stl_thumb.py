@@ -13,10 +13,10 @@ fout = ""
 size = ""
 
 def main( ):
-	
+
 	m = hashlib.md5()
 	m.update(fin)
-	
+
 
 	ff = "/tmp/stl_to_png_%s.scad" % m.hexdigest()
 
@@ -31,13 +31,13 @@ def main( ):
 	os.remove(ff)
 
 	sys.exit(0)
-		
+
 
 if __name__ == '__main__':
 
 	f = open("/tmp/stl_to_png_tmp.log","w")
 	f.write("%i %s"%(len(sys.argv),sys.argv))
-	f.close()	
+	f.close()
 
 	if len(sys.argv) <> 4:
 		print "add args [in file] [out file] [size]"

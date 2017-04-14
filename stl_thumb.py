@@ -39,7 +39,7 @@ if __name__ == '__main__':
 	f.write("%i %s"%(len(sys.argv),sys.argv))
 	f.close()	
 
-	if len(sys.argv) <> 4:
+	if len(sys.argv) != 4:
 		print "add args [in file] [out file] [size]"
 		sys.exit(0)
 	else:

@@ -9,7 +9,6 @@ fin = ""
 fout = ""
 size = ""
 
-
 def main():
 
     m = hashlib.md5()
@@ -27,7 +26,6 @@ def main():
     os.remove(ff)
 
     sys.exit(0)
-
 
 if __name__ == '__main__':
 

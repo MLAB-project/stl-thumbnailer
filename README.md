@@ -11,6 +11,11 @@ This project use [OpenSCAD](http://www.openscad.org/) for thumbnails preview. Yo
 
 ### Install stl-thumbnailer
 
+clone from repository
+
+    git clone https://github.com/MLAB-project/stl-thumbnailer.git
+    cd stl-thumbnailer
+
     sudo cp stl_thumb.py /usr/local/bin/
     sudo chmod a+x /usr/local/bin/stl_thumb.py
     sudo cp stl.thumbnailer /usr/share/thumbnailers/

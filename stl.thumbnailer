@@ -1,3 +1,6 @@
 [Thumbnailer Entry]
 Exec=/usr/local/bin/stl_thumb.py %i %o %s
-MimeType=application/sla;
+MimeType=application/stl;model/x.stl-binary;model/x.stl-ascii
+
+
+

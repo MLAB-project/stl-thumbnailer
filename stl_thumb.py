@@ -12,7 +12,7 @@ size = ""
 def main():
 
     m = hashlib.md5()
-    m.update(fin)
+    m.update(fin.encode('utf8'))
 
     ff = "/tmp/stl_to_png_%s.scad" % m.hexdigest()
 

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import os
 import sys
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     f.close()
 
     if len(sys.argv) != 4:
-        print "add args [in file] [out file] [size]"
+        print ("add args [in file] [out file] [size]")
         sys.exit(0)
     else:
         fin = sys.argv[1]

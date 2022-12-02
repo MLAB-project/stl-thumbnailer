@@ -5,9 +5,9 @@ Shows thumbnails of STL files in Nautilus file browser. The sources are based on
 
 ## Install
 
-### Install OpenSCAD
+### Install stl-thumb
 
-This project use [OpenSCAD](http://www.openscad.org/) for thumbnails preview. You must install OpenSCAD before using it.
+This project use [stl-thumb](https://github.com/unlimitedbacon/stl-thumb) for thumbnails preview. You must install stl-thumb before using it.
 
 ### Install stl-thumbnailer
 

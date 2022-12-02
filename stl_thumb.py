@@ -9,7 +9,7 @@ fin = ""
 fout = ""
 
 def main():
-    cmd = "stl-thumb '%s' '%s.png' 2> /dev/null; mv '%s.png' '%s'" % (fin, fout, fout, fout)
+    cmd = "stl-thumb '%s' '%s.png' -s %s 2> /dev/null; mv '%s.png' '%s'" % (fin, fout, size, fout, fout)
     os.system(cmd)
 
     sys.exit(0)

@@ -7,23 +7,10 @@ import hashlib
 
 fin = ""
 fout = ""
-size = ""
 
 def main():
-
-    m = hashlib.md5()
-    m.update(fin.encode('utf8'))
-
-    ff = "/tmp/stl_to_png_%s.scad" % m.hexdigest()
-
-    f = open(ff, "w")
-    f.write("import(\"%s\");" % fin)
-    f.close()
-
-    cmd = "openscad -o %s.png --imgsize=%s,%s %s 2> /dev/null; mv %s.png %s" % (fout, size, size, ff, fout, fout)
+    cmd = "stl-thumb '%s' '%s.png' 2> /dev/null; mv '%s.png' '%s'" % (fin, fout, fout, fout)
     os.system(cmd)
-
-    os.remove(ff)
 
     sys.exit(0)
 
@@ -34,11 +21,10 @@ if __name__ == '__main__':
     f.close()
 
     if len(sys.argv) != 4:
-        print ("add args [in file] [out file] [size]")
+        print ("add args [in file] [out file]")
         sys.exit(0)
     else:
         fin = sys.argv[1]
         fout = sys.argv[2]
         size = sys.argv[3]
-
     main()

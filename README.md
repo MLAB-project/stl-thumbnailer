@@ -9,12 +9,17 @@ Shows thumbnails of STL files in Nautilus file browser. The sources are based on
 
 This project use [stl-thumb](https://github.com/unlimitedbacon/stl-thumb) for thumbnails preview. You must install stl-thumb before using it.
 
+    wget https://github.com/unlimitedbacon/stl-thumb/releases/download/v0.5.0/stl-thumb_0.5.0_amd64.deb
+    sudo apt install ./stl-thumb_0.5.0_amd64.deb
+
 ### Install stl-thumbnailer
 
 clone from repository
 
     git clone https://github.com/MLAB-project/stl-thumbnailer.git
     cd stl-thumbnailer
+
+Intall thumbnailer
 
     sudo cp stl_thumb.py /usr/local/bin/
     sudo chmod a+x /usr/local/bin/stl_thumb.py
